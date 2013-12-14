@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 	validates :password, length: { minimum: 6 }  				
 
 	has_secure_password
+
+	def self.Say_Hello
+       "Salam"
+    end
 end
